@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Curvas no espaço | CURVAS PARAMÉTRICAS </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Begoña Alarcón Cotillas (Universidade Federal Fluminense, Brasil)" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="geogebra-activity.css" />
+<script type="text/javascript" src="geogebra-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegação</a></p>
+<header id="header"  style="background-image: url(banner.png); background-repeat: repeat-x;"><div id="headerContent">CURVAS PARAMÉTRICAS</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Comece por aqui</a></li>
+   <li><a href="desmistificando_as_curvas_paramtricas.html" class="no-ch">Desmistificando as curvas paramétricas</a></li>
+   <li><a href="parametrizao_de_retas_e_segmentos_no_plano.html" class="no-ch">Parametrização de retas e segmentos no plano</a></li>
+   <li><a href="parametrizao_do_grfico_de_uma_funo.html" class="no-ch">Parametrização do gráfico de uma função</a></li>
+   <li><a href="parametrizao_de_cnicas.html" class="no-ch">Parametrização de cônicas</a></li>
+   <li id="active"><a href="curvas_no_espao.html" class="active no-ch">Curvas no espaço</a></li>
+   <li><a href="como_esboar_curvas_com_o_geogebra.html" class="no-ch">Como esboçar curvas com o Geogebra</a></li>
+   <li><a href="de_paramtricas_a_cartesiana.html" class="no-ch">De paramétricas a cartesiana</a></li>
+   <li><a href="exerccios.html" class="no-ch">Exercícios</a></li>
+   <li><a href="vetor_tangente_e_vetor_velocidade.html" class="no-ch">Vetor tangente e Vetor velocidade</a></li>
+   <li><a href="exerccios0.html" class="no-ch">Exercícios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="parametrizao_de_cnicas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="como_esboar_curvas_com_o_geogebra.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Curvas no espaço</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_lee" id="id55">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Retas no espaço</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta55_126_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Na seção <a href="parametrizao_de_retas_e_segmentos_no_plano.html" title="Clique aqui para acessar a seção" class="exe-tooltip plain-tt">Parametrização de retas e segmentos no plano</a> deduzimos as equações paramétricas de uma reta no plano. A equação vetorial da reta era <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\quad X(t)=(2-3t, 2t), \;t\in \mathbb{R}.\quad \) </span></span></p>
+<p>Ou equivalentemente,</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\quad X(t)=(2,0)+(-3, 2)t, \;t\in \mathbb{R}, \quad \) </span></span> onde <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\;P(2,0)\; \) </span></span> é um ponto por onde passa a reta e <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\; \vec{v}=(-3,2)\; \) </span></span>é o vetor diretor.</p>
+<p>As retas no espaço possuem mesmo tipo de equação vetorial, só que agora tanto o ponto quanto o vetor diretor estão no espaco. Isto é, eles tem três coordenadas.</p>
+<p>Sendo assim, a equação vetorial da reta que passa pelo ponto <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\;A(-1,4,2)\) </span></span> e tem vetor diretor <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\;\vec{w}=(1,3,-1)\) </span></span> seria:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> X(t)=(-1,4,2)+(1,3,-1)t, \;t\in \mathbb{R}.</span></span></p>
+<p>Daí, uma equação paramétrica da reta seria</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= -1+t \\ y(t) &amp;=4+ 3t \\ z(t) &amp;=2-t\end{cases} \quad ,\,t\in \mathbb{R}. </span></span></p>
+<p> É só adicionar uma terceira coordenada! Nada demais, né? Agora... Esboçar a tal reta no espaço já não é nada simples! Nem para quem sabe muito de geometria, viu? Não é só você quem não sabe, não... <a href="como_esboar_curvas_com_o_geogebra.html" title="Nessa seção explicamos como fazer com o GeoGebra" class="exe-tooltip plain-tt">Desenhar objetos no espaço</a> no é para nada trivial, mas com um pouco de treinamento a coisa vai melhorando aos pouquinhos. </p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Encontre uma parametrização do segmento de reta que une o ponto A(-1,4,2) e B(1,2,1)?" /></div><div class="feedback js-feedback js-hidden"><p><span style="font-size: 16.8px;">Com certeza você fez certo! É mesma coisa que com segmentos no plano, só que agora os pontos estão no espaço.</span></p>
+<p></p>
+<p>A equação vetorial do segmento de reta que vai do ponto A(-1,4,2) até o ponto B(1,2,1) seria</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \( \quad (x,y,z)=(1,2,1)t+(-1,4,2)(1-t),\;t\in [0,1]. \quad \)</span></span></p>
+<p>Ou equivalentemante,</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \( X(t)=(-1+2t, 4-2t,2-t), \;t\in [0,1]. \)</span></span></p>
+<p>Comprove que o primeiro ponto é A e o último ponto é B. Bancana, né?</p>
+<p>Assim, uma parametrização do <a title="Qual seria a equação vetorial do segmento que vai do ponto B para o ponto A?" class="exe-dialog-link" rel="lightbox" href="#t93c682e0-ed64-6df8-1f9b-0d0d7a35bed1" id="link93c682e0-ed64-6df8-1f9b-0d0d7a35bed1">segmento de reta que vai de A para B</a> é:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= -1+2t \\ y(t) &amp;= 4-2t \\ z(t) &amp;= 2-t\end{cases} \quad ,\,t\in [0,1] </span></span></p>
+<p>Legal, né?</p>
+<p>Entre em contato com os monitores se ainda estiveres com dúvidas.</p>
+<p>Força!</p>
+<p><strong>Curiosidade:</strong> Pergunte seu/sua professor/a o que acontece com a orientação de curvas no espaço. As vezes, para dar a orientação de uma curva no espaço precisaremos saber desde onde a gente está olhando para ela... Doido, né?</p>
+<p>  </p>
+<div id="t93c682e0-ed64-6df8-1f9b-0d0d7a35bed1" class="exe-dialog-text js-hidden">
+<p>X(t)=At+B(1-t), t entre 0 e 1</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Brinque com a reta no espaço!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_130_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-xwhcwfmr auto-geogebra-width-1063 auto-geogebra-height-440 language-pt showResetIcon enableShiftDragZoom auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Fique a vontade de mexer no ponto P da reta e nas coordenadas \(v_1\), \(v_2\) e \(v_3\) do vetor diretor. O applet devolverá a parametrização da reta com o ponto e o vetor indicados.</p>
+<p>Gire o plano para poder ver a reta desde vários ângulos.</p></div><p><a href="https://www.geogebra.org/m/xwhcwfmr" target="_blank">https://www.geogebra.org/m/xwhcwfmr (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Paula%20Bruna%20Daco,https%3A//ggbm.at/31339025,Equa%E7%F5es%20param%E9tricas%20da%20reta%20no%20espa%E7o,1,Autoria</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_lee" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Cônicas e gráfico de funções no espaço</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_120_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>As cônicas e outras curvas no plano podem ser enxergadas no espaço também, como sendo curvas no plano <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \( \;z=0.\)</span></span></p>
+<p>Sim, acredite! Lembrando que a parametrização da circunferência que vimos na <a href="parametrizao_de_cnicas.html" title="Acesse aqui o conteúdo da seção" class="exe-tooltip plain-tt">seção de cônicas</a> no plano era</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2\cos(t) \\ y(t) &amp;= 2\operatorname{sen}(t)\end{cases} \quad ,\,t\in [0,2\pi]. </span></span></p>
+<p>Já a mesma circunferência no espaço seria </p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2\cos(t) \\ y(t) &amp;= 2\operatorname{sen}(t) \\ z(t) &amp;= 0 \end{cases} \quad ,\,t\in [0,2\pi] </span></span></p>
+<p>Mas... como seriam as equações da circunferência no plano <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \( \;z=3\)</span></span>?</p>
+<p>Essas daqui:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2\cos(t) \\ y(t) &amp;= 2\operatorname{sen}(t) \\ z(t) &amp;= 3 \end{cases} \quad ,\,t\in [0,2\pi] </span></span></p>
+<p>É bem simples, uma vez que você tem a curva no plano é só adicionar a terceira coordenada com mesmo valor do plano <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \( \;z=k.\;\)</span></span>. Assim:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2\cos(t) \\ y(t) &amp;= 2\operatorname{sen}(t) \\ z(t) &amp;= k \end{cases} \quad ,\,t\in [0,2\pi] </span></span></p>
+<p>Legal, né?</p>
+<p>Assim como as parametrizações de curvas no plano não são únicas, as do espaço também não o são. Fique ligado/a!</p>
+<p>Na seção <a href="como_esboar_curvas_com_o_geogebra.html" title="Acesse aqui o conteúdo da seção" class="exe-tooltip plain-tt">Como esboçar curvas no GeoGebra</a> daremos algumas dicas para esboçar curvas no espaço. Fique tranquilo/a.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Encontre uma parametrização do gráfico da função sen(x) no plano z=7?" /></div><div class="feedback js-feedback js-hidden"><p>Lembrando que a parametrização da curva y=sen(x) é:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= t \\ y(t) &amp;= \operatorname{sen}(t)\end{cases} \quad ,\,t\in \mathbb{R}. </span></span></p>
+<p>Então, da mesma maneira que foi feito com a circunferência, é só adicionar o valor da terceira coordenada</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= t \\ y(t) &amp;= \operatorname{sen}(t) \\ z(t) &amp;= 7 \end{cases} \quad ,\,t\in \mathbb{R} </span></span></p>
+<p>Entre em contato com os monitores se ainda estiveres com dúvidas. Força!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id45">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Brinque com a elipse no espaço!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta45_129_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-ayrbnacv auto-geogebra-width-1100 auto-geogebra-height-496 language-pt showResetIcon enableShiftDragZoom auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Fique a vontade de trocar de plano <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\; z=z_0 \;\) </span></span>e de mexer nos semi-eixos a e b da elipse. O applet devolverá a parametrização no espaço e a <a title="Clique só se você quer ficar doido/a" class="exe-dialog-link" rel="lightbox" href="#ta816bc86-9ec6-15f2-7a20-8280d6d8122e" id="linka816bc86-9ec6-15f2-7a20-8280d6d8122e">equação cartesiana</a> do cilindro onde está contida. </p>
+<p>Se você mexer no tempo t, o pontinho P irá percorrer toda a elipse. Tente relacionar o tempo t com os pontos da elipse dados pela parametrização. Lembre que agora os pontos tem três coordenadas!</p>
+<p>Gire o plano para poder ver a elipse desde vários ângulos.</p>
+<div id="ta816bc86-9ec6-15f2-7a20-8280d6d8122e" class="exe-dialog-text js-hidden">
+<p>Se você escrever no Geogebra 2D x^2/4+y^2/9=1, ele desenhará a elipse de centro a origem e semi-eixos a=4 e b=3. Já se você escrever a mesma equação no Geogebra 3D, ele desenhará um cilindro. Por que? Porque no espaço os objetos tem três coordenadas x,y, z. Quando você escreve a equação x^2/4+y^2/9=1 não está informando o valor de z. Daí se entende que z pode pegar qualquer valor real. Obtendo assim o cilindro!</p>
+</div></div><p><a href="https://www.geogebra.org/m/ayrbnacv" target="_blank">https://www.geogebra.org/m/ayrbnacv (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Bego%F1a%20Alarc%F3n,https%3A//www.geogebra.org/m/hzvsftdf%23material/ayrbnacv,Elipse%20no%20espa%E7o,1,Autoria</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id57">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">Atividade</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta57_121_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Nas seções anteriores obtivemos a parametrização da reta, segmento de reta, gráfico de uma função e cônicas a partir das equações cartesianas. Esboce todas essas curvas em planos diferentes.</p>
+<p>Tente fazer a mão, sem ajuda do GeoGebra. Use o programa somente para conferir se você fez certo. Brinque com todas as funções de cálculo que você lembre. Fique a vontade!</p>
+<p>Entre em contato com os monitores se ainda estiveres com dúvidas.</p>
+<p>Força!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Brinque com a Hélice!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_131_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-r9z3v6sq auto-geogebra-width-1100 auto-geogebra-height-500 language-pt showResetIcon enableShiftDragZoom auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Nem todas as curvas no espaço vem de curvas no plano, não! Existem inúmeras curvas lindas que tem terceira coordenada z(t) dependendo do tempo também.</p>
+<p>Um exemplo deste tipo de curvas seria a hélice.</p>
+<p>Fique a vontade de mexer nas excentricidades a, b e c da hélice. O applet devolverá a parametrização no espaço e a equação cartesiana do cilindro onde ela mora. </p>
+<p>Se você mexer no tempo t, o pontinho P irá percorrer toda a hélice. Tente relacionar o tempo t com os pontos da hélice dados pela parametrização. Lembre que agora os pontos tem três coordenadas!</p>
+<p>Gire o plano para poder ver a hélice desde vários ângulos.</p></div><p><a href="https://www.geogebra.org/m/r9z3v6sq" target="_blank">https://www.geogebra.org/m/r9z3v6sq (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Bego%F1a%20Alarc%F3n,https%3A//www.geogebra.org/m/hzvsftdf%23material/r9z3v6sq,H%E9lice,1,Autoria</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-nd">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licença Creative Commons Atribuição Não Comercial Sem Derivações 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="parametrizao_de_cnicas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="como_esboar_curvas_com_o_geogebra.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Nova janela)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

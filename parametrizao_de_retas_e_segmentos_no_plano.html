@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Parametrização de retas e segmentos no plano | CURVAS PARAMÉTRICAS </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Begoña Alarcón Cotillas (Universidade Federal Fluminense, Brasil)" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="geogebra-activity.css" />
+<script type="text/javascript" src="geogebra-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegação</a></p>
+<header id="header"  style="background-image: url(banner.png); background-repeat: repeat-x;"><div id="headerContent">CURVAS PARAMÉTRICAS</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Comece por aqui</a></li>
+   <li><a href="desmistificando_as_curvas_paramtricas.html" class="no-ch">Desmistificando as curvas paramétricas</a></li>
+   <li id="active"><a href="parametrizao_de_retas_e_segmentos_no_plano.html" class="active no-ch">Parametrização de retas e segmentos no plano</a></li>
+   <li><a href="parametrizao_do_grfico_de_uma_funo.html" class="no-ch">Parametrização do gráfico de uma função</a></li>
+   <li><a href="parametrizao_de_cnicas.html" class="no-ch">Parametrização de cônicas</a></li>
+   <li><a href="curvas_no_espao.html" class="no-ch">Curvas no espaço</a></li>
+   <li><a href="como_esboar_curvas_com_o_geogebra.html" class="no-ch">Como esboçar curvas com o Geogebra</a></li>
+   <li><a href="de_paramtricas_a_cartesiana.html" class="no-ch">De paramétricas a cartesiana</a></li>
+   <li><a href="exerccios.html" class="no-ch">Exercícios</a></li>
+   <li><a href="vetor_tangente_e_vetor_velocidade.html" class="no-ch">Vetor tangente e Vetor velocidade</a></li>
+   <li><a href="exerccios0.html" class="no-ch">Exercícios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="desmistificando_as_curvas_paramtricas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="parametrizao_do_grfico_de_uma_funo.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Parametrização de retas e segmentos no plano</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_lecturafacil" id="id18">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lecturafacil.svg)"><h1 class="iDeviceTitle">Parametrização de uma reta no plano</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_122_2" class="block iDevice_content">
+<div class="exe-text"><p>As curvas paramétricas são representações matemáticas de objetos no espaço. Em vez de descrever uma curva em termos de uma ou duas variáveis como, por exemplo, na equação cartesiana de uma reta:</p>
+<p><span class="exe-math code-only exe-math-engine exe-math-inline position-center"><span class="exe-math-code">\(2x+3y=4\)</span></span></p>
+<p>usamos parâmetros para definir as coordenadas de um ponto ao longo da curva. Então obtemos umas coordenadas paramétricas:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2-3t \\ y(t) &amp;= 2t\end{cases} \quad ,\,t\in \mathbb{R} </span></span></p>
+<p>Essas coordenadas são chamadas de equações paramétricas da reta. Ou, diretamente, parametrização da reta. As vezes, essa parametrização é representada em forma vetorial:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> X(t)=(2-3t, 2t), \;t\in \mathbb{R} </span></span></p>
+<p> </p>
+<p>Se essas equações descrevessem o movimento de um objeto, as equações paramétricas dariam a posição do objeto no instante t. A trajetória do objeto seria a reta em si.</p>
+<p>  </p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Como obtive as equações paramétricas?" /></div><div class="feedback js-feedback js-hidden"><p>Bem simples!!</p>
+<p>Dada a reta <span class="exe-math code-only exe-math-engine exe-math-inline position-center"><span class="exe-math-code"> \(2x+3y=4,\) </span></span> calculamos o vetor normal <span class="exe-math code-only exe-math-engine exe-math-inline position-center"><span class="exe-math-code"> \(\quad \vec{n}=(2,3),\quad\) </span></span> cujas coordenadas são os coeficientes que acompanham às veriáveis x e y.</p>
+<p>Assim, um vetor diretor da reta seria <span class="exe-math code-only exe-math-engine exe-math-inline position-center"><span class="exe-math-code">\(\quad \vec{v}=(-3,2),\quad \)</span></span> por ser ortogonal ao vetor normal.</p>
+<p>Substituindo y=0 na equação cartesiana, obtemos o ponto \(P(2, 0)\) por onde passa a reta. Portanto, a equação vetorial da reta é <span class="exe-math code-only exe-math-engine exe-math-inline position-center"><span class="exe-math-code">\(\quad \vec{r}(t)=(2,0)+(-3,2)t,\; t\in \mathbb{R}\)</span></span></p>
+<p>Fazendo <span class="exe-math code-only exe-math-engine exe-math-inline position-center"><span class="exe-math-code">\(\quad (x,y,z)=(2,0)+(-3,2)t,\quad\)</span></span> obtemos as equações paramétricas desejadas:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2-3t \\ y(t) &amp;= 2t\end{cases} \quad ,\,t\in \mathbb{R} </span></span></p>
+<p>Ou equivalentemente, <span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code">\(\quad X(t)=(2-3t, 2t),\;t\in \mathbb{R}\) </span></span></p>
+<p>Legal, né?</p>
+<p>A parametrização de uma curva não é única, pudendo ter uma mesma curva várias equações paramétricas. Não se estresse!!! Veremos alguns exemplos mais para a frente. Nãos e preocupe agora com isso, não.</p>
+<p>Entre em contato com os monitores se ainda estiveres com dúvidas.</p>
+<p>Força!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_lecturafacil" id="id21">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lecturafacil.svg)"><h1 class="iDeviceTitle">Parametrização de um segmento de reta no plano</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_124_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="seg1.png" alt="segmento" title="segmento" width="257" height="170" style="vertical-align: text-top; margin: 10px;" /></p>
+<p>Quais seriam as equações paramétricas ou parametrização do segmento de reta que une o ponto inicial A(2,1) e o ponto final B(-1,2)?</p>
+<p>Ponto inicial seria no instante \(t=0\), certo? E ponto final, digamos, seria no instante t=1, se a gente obriga o t ir apenas de 0 até 1. Não é?</p>
+<p>O que você acha dessa equação vetorial aqui?</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> (x,y)=(-1,2)t+(2,1)(1-t),\;t\in [0,1] </span></span></p>
+<p>Comprove que o primeiro ponto é A e o último ponto é B. Bacana, né?</p>
+<p>Assim, uma parametrização do segmento de reta que vai de A para B é:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= -t+2(1-t)\\ y(t) &amp;= 2t+1(1-t)\end{cases} \; ,\,t\in [0,1] </span></span></p>
+<p>Isto é,</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2-3t \\ y(t) &amp;= 1+t\end{cases} \; ,\,t\in [0,1] </span></span></p>
+<p>A parametrização em forma vetorial é:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> X(t)=(2-3t, 1+t), \;t\in [0,1] </span></span></p>
+<p>De novo, se essas equações descrevessem o movimento de um objeto, as equações paramétricas dariam a posição do objeto no instante t. A trajetória do objeto seria segmento de reta em si.</p>
+<p><strong>Curiosidade:</strong> Pergunte seu/sua professor/a o que significa a setinha que aparece na imagem do segmento. Com certeza ele/a vai falar de orientação de curvas! </p>
+<p>  </p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Encontre uma parametrização do segmento que vai de B para A?" /></div><div class="feedback js-feedback js-hidden"><p>A equação vetorial do segmento que vai de B(-1,2) para A(2,1) seria: </p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> (x,y)=(2,1)t+(-1,2)(1-t),\;t\in [0,1],</span></span> pois agora começamos em B e acabamos em A.</p>
+<p>Assim, uma parametrização do segmento de reta que vai de B para A é:</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;= 2t-1(1-t)\\ y(t) &amp;= t+2(1-t)\end{cases} \; ,\,t\in [0,1] </span></span></p>
+<p>Isto é,</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \begin{cases} x(t) &amp;=-1+3t \\ y(t) &amp;= 2-t\end{cases} \; ,\,t\in [0,1] </span></span></p>
+<p><strong>Curiosidade:</strong> Se desenharmos o segmento, para onde iria a setinha?</p>
+<p>Legal, né?</p>
+<p>Entre em contato com os monitores se ainda estiveres com dúvidas.</p>
+<p>Força!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Brinque com as retas no plano!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_127_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-txhs6xcz auto-geogebra-width-853 auto-geogebra-height-555 language-pt showResetIcon enableShiftDragZoom auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Fique a vontade de mexer no valor m da inclinação da reta. O applet devolverá a parametrização da reta y a equação cartesiana.</p>
+<p>Se você mexer no tempo t, o pontinho P irá percorrer toda a reta. Tente relacionar o tempo t com os pontos da reta dados pela parametrização!</p>
+<p>Para não poluir o applet, selecione apenas uma reta de cada vez.</p></div><p><a href="https://www.geogebra.org/m/txhs6xcz" target="_blank">https://www.geogebra.org/m/txhs6xcz (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Bego%F1a%20Alarc%F3n,https%3A//www.geogebra.org/m/hzvsftdf%23material/txhs6xcz,Retas,1,Autoria</div><div class="auto-geogebra-extra-content"><p><span style="color: #339966;">Se faça as seguintes perguntas para cada curva:</span></p>
+<ol style="list-style-type: lower-alpha;">
+<li><span style="color: #339966;">Fixe um ponto qualquer Q da reta. Em qual instante é atingido esse ponto? </span></li>
+<li><span style="color: #339966;">Fixe um intante \(t=t_0\). Por qual ponto passa a reta nesse instante?</span></li>
+</ol>
+<p>Comente com seus colegas!</p>
+<p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;">Entre em contato com os monitores em caso de dúvidas.</p>
+<p style="font-family: 'Atkinson Hyperlegible', ​Arial, Helvetica, sans-serif;">Força!</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-nd">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licença Creative Commons Atribuição Não Comercial Sem Derivações 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="desmistificando_as_curvas_paramtricas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="parametrizao_do_grfico_de_uma_funo.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Nova janela)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

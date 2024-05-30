@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Vetor tangente e Vetor velocidade | CURVAS PARAMÉTRICAS </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Begoña Alarcón Cotillas (Universidade Federal Fluminense, Brasil)" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="geogebra-activity.css" />
+<script type="text/javascript" src="geogebra-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegação</a></p>
+<header id="header"  style="background-image: url(banner.png); background-repeat: repeat-x;"><div id="headerContent">CURVAS PARAMÉTRICAS</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Comece por aqui</a></li>
+   <li><a href="desmistificando_as_curvas_paramtricas.html" class="no-ch">Desmistificando as curvas paramétricas</a></li>
+   <li><a href="parametrizao_de_retas_e_segmentos_no_plano.html" class="no-ch">Parametrização de retas e segmentos no plano</a></li>
+   <li><a href="parametrizao_do_grfico_de_uma_funo.html" class="no-ch">Parametrização do gráfico de uma função</a></li>
+   <li><a href="parametrizao_de_cnicas.html" class="no-ch">Parametrização de cônicas</a></li>
+   <li><a href="curvas_no_espao.html" class="no-ch">Curvas no espaço</a></li>
+   <li><a href="como_esboar_curvas_com_o_geogebra.html" class="no-ch">Como esboçar curvas com o Geogebra</a></li>
+   <li><a href="de_paramtricas_a_cartesiana.html" class="no-ch">De paramétricas a cartesiana</a></li>
+   <li><a href="exerccios.html" class="no-ch">Exercícios</a></li>
+   <li id="active"><a href="vetor_tangente_e_vetor_velocidade.html" class="active no-ch">Vetor tangente e Vetor velocidade</a></li>
+   <li><a href="exerccios0.html" class="no-ch">Exercícios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="exerccios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="exerccios0.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Vetor tangente e Vetor velocidade</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_lee" id="id69">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_lee.svg)"><h1 class="iDeviceTitle">Derivada de uma parametrização</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta69_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Já vimos o úteis que são as parametrizações para construir coisas, simular movimentos de objetos, etc. Mais ainda tempos mais!</p>
+<p></p>
+<p>Se a parametrização for de uma trilha, como podemos saber como de fechada é uma curva no meio do caminho ou se temos que virar à direita ou esquerda? E se for o movimento de um objeto, como podemos saber a velocidade ou a aceleração em um determinado instante? Para isso é que necessitaremos o conceito de derivada da parametrização!</p>
+<p>Uma parametrização</p>
+<p><span class="exe-math code-only exe-math-engine position-center"><span class="exe-math-code"> \(\; \gamma:\begin{cases}x=x(t) \\ y=y(t)\end{cases}\, ,\; t\in I \;\) </span></span></p>
+<p>pode ser enxergada como sendo uma função \(\,\vec{\gamma}:\mathbb{R}\to \mathbb{R^2}\,\) que associa a cada instante t um vetor  \(\; \vec{\gamma}(t)= (x(t),y(t))\). Assim, podemos calcular a derivada dessa nova função no instante \(\; t_0\;\) como sendo \(\; \vec{\gamma}\,'(t_0)=(x'(t_0),y'(t_0)) \;\). Isto é, derivaremos coordenada a coordenada. Essa nova função pode dar um pouco de medo no início, mas não vai dar problema nenhum para você. Pode acreditar!</p>
+<p>Só se atente a que agora a derivada é um vetor, ok? Ele será chamado de <strong>vetor derivada da parametrização e <a title="Clique aqui" class="exe-dialog-link" rel="lightbox" href="#tce1596e1-70a7-1f3c-1314-0deb72e31a75" id="linkce1596e1-70a7-1f3c-1314-0deb72e31a75">ele é tangente à curva no ponto</a> \(\,\vec{\gamma}(t_0)\,\) da curva.</strong></p>
+<p>Sacou? </p>
+<p>Vamos calcular a derivada no instante \(\, t=\frac{\pi}{2}\,\) da parametrização da circunferência  \(\vec{\gamma}(t)=( 3+2\cos(t),-1+ 2\operatorname{sen}(t)), \;\,t\in [0,2\pi]\):</p>
+<p>Se derivamos coordenada a coordenada temos que \(\vec{\gamma}\,'(t)=(-2\operatorname{sen}(t),2\cos(t)), \;\,t\in [0,2\pi]\).</p>
+<p>Substituindo t por \(\,\frac{\pi}{2}\,\) temos que \(\vec{\gamma}\,'(\frac{\pi}{2})=(-2\operatorname{sen}(\frac{\pi}{2}),2\cos(\frac{\pi}{2}))=(2,0)\).</p>
+<p></p>
+<div id="tce1596e1-70a7-1f3c-1314-0deb72e31a75" class="exe-dialog-text js-hidden">
+<p>Acredite, sim! Na atividade <em>Como esboçar o vetor tangente a uma curva</em> você enxergará certinho!</p>
+</div></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Agora encontre o vetor derivada no ponto (1,-1)" /></div><div class="feedback js-feedback js-hidden"><p>Primeiro devemos encontrar o instante \(\;t_0\;\) em que a curva passa pelo ponto \((1,-1)\):</p>
+<p>\(\vec{\gamma}(t_0)=( 3+2\cos(t_0),-1+ 2\operatorname{sen}(t_0))=(-1,0)\). Então, </p>
+<p>\(3+2\cos(t_0)=1\;\) e \(\;-1+ 2\operatorname{sen}(t_0)=-1.\;\) Isto é, \(\cos(t_0)=-2/2=-1\,\) e \(\operatorname{sen}(t_0)=0\,\). Logo, \(\,t_0=\pi\).</p>
+<p>Agora, fazendo \(\,t=\pi\)  na derivada \(\,\vec{\gamma}\,'(t)\), temos que o vetor derivada da parametrização no ponto (1,-1) é</p>
+<p>\(\vec{\gamma}\,'(\pi)=(-2\operatorname{sen}(\pi),2\cos(\pi))=(0,-2)\).</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id72">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Brinque com a derivada de curvas no plano</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta72_120_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-fyvghwwc auto-geogebra-width-1920 auto-geogebra-height-953 auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Fique a vontade de mexer no tempo t. O applet devolverá o vetor \(\, \vec{r}(t)=(x(t),y(t))\,\) dado pela parametrização da curva e o vetor derivada \(\, \vec{r}\,'(t) \,\) em cada instante escolhido. Observe que ele é tangente à curva no ponto selecionado.</p>
+<p>Tente relacionar o instante \(\,t_0\,\) com o ponto da curva \(\, (x(t_0),y(t_0)) \,\).</p>
+<p>Para não poluir o applet, selecione apenas uma curva de cada vez. <a href="https://www.geogebra.org/m/fyvghwwc" title="Dica" class="exe-tooltip plain-tt">Clique aqui</a> para visualizar o applet em uma janela externa.</p></div><p><a href="https://www.geogebra.org/m/fyvghwwc" target="_blank">https://www.geogebra.org/m/fyvghwwc (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Bego%F1a%20Alarc%F3n,https%3A//www.geogebra.org/m/fyvghwwc,Derivada%20curvas%20no%20plano,1,Autoria</div><div class="auto-geogebra-extra-content"><p>No capítulo de Funções vetoriais de uma variável do livro digital <a href="https://www.geogebra.org/m/hzvsftdf" title="Veja mais sobre" class="exe-tooltip plain-tt">Cálculo de várias variáveis com Geogebra 3D. Vol I</a> você poderá se aprofundar mais sobre este tipo de funções.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id74">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Brinque com a derivada de curvas no espaço</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta74_122_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-nhqwhwvk auto-geogebra-width-1920 auto-geogebra-height-953 auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Fique a vontade de mexer no tempo t. O applet devolverá o vetor \(\, \vec{r}(t)=(x(t),y(t),z(t))\,\) dado pela parametrização da curva e o vetor derivada \(\, \vec{r}\,'(t) \,\) em cada instante escolhido. Observe que ele é tangente à curva no ponto selecionado.</p>
+<p>Tente relacionar o instante \(\,t_0\,\) com o ponto da curva \(\, (x(t_0),y(t_0),z(t_0)) \,\).</p>
+<p>Para não poluir o applet, selecione apenas uma curva de cada vez. Clique aqui para visualizar o applet em uma janela externa.</p></div><p><a href="https://www.geogebra.org/m/nhqwhwvk" target="_blank">https://www.geogebra.org/m/nhqwhwvk (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Bego%F1a%20Alarc%F3n,https%3A//www.geogebra.org/m/nhqwhwvk,Derivada%20curvas%20no%20espa%E7o,1,Autoria</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_curiosidad" id="id70">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_curiosidad.svg)"><h1 class="iDeviceTitle">O que sabemos do vetor tangente?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta70_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Na natureza, o conceito de vetor tangente a uma curva é frequentemente observado em diversos fenômenos. Vamos explorar algumas aplicações:</p>
+<p><img src="vetortan1.jpg" width="200" height="200" style="vertical-align: middle; display: block; margin: 10px;" title="Cinemática de Partículas em Movimento" /></p>
+<p>Cinemática de Partículas em Movimento: Quando um objeto segue uma trajetória curva, o vetor tangente em cada ponto dessa trajetória indica a direção e o sentido do movimento da partícula naquele instante. Por exemplo, imagine uma bicicleta fazendo uma curva em uma estrada sinuosa. O vetor tangente em cada ponto da trajetória da bicicleta aponta para a direção em que ela está se movendo.</p>
+<p><img src="vetortan2.jpg" alt="" title="Correntes oceânicas" width="200" height="200" style="vertical-align: middle; margin: 10px; display: block;" /></p>
+<p>Correntes Oceânicas e Aéreas: As correntes oceânicas e os ventos atmosféricos seguem trajetórias complexas. O vetor tangente em qualquer ponto dessas correntes ou ventos indica a direção em que eles estão fluindo. Essa informação é crucial para a navegação marítima, previsão do tempo e estudos climáticos.</p>
+<p><img src="vetortan3.jpg" alt="" title="Curvas de Rio e Rios Meândricos" width="200" height="200" style="vertical-align: middle; margin: 10px; display: block;" /></p>
+<p>Curvas de Rio e Rios Meândricos: Os rios muitas vezes seguem curvas sinuosas em seu curso. O vetor tangente em cada ponto da curva do rio aponta para a direção em que a água está fluindo. Isso influencia a erosão das margens, a formação de meandros e a distribuição de sedimentos.</p>
+<p><img src="vetortan4.jpg" alt="" title="Movimento de Planetas e Satélites" width="200" height="200" style="vertical-align: middle; margin: 10px; display: block;" /></p>
+<p>Movimento de Planetas e Satélites: No sistema solar, os planetas e satélites naturais (como a Lua) seguem órbitas elípticas ou circulares. O vetor tangente em qualquer ponto da órbita indica a direção do movimento orbital. Isso é fundamental para a mecânica celeste e a previsão de eclipses.</p>
+<p><img src="vetortan5.jpg" alt="" title="Curvas de Crescimento em Plantas e Árvores" width="200" height="200" style="vertical-align: middle; margin: 10px; display: block;" /></p>
+<p>Curvas de Crescimento em Plantas e Árvores: O crescimento de plantas e árvores muitas vezes segue padrões curvos. O vetor tangente em cada ponto da curva de crescimento indica a direção em que a planta está se expandindo. Isso é relevante para a agricultura, silvicultura e estudos botânicos.</p>
+<p></p>
+<p>Em resumo, o vetor tangente a uma curva é uma ferramenta matemática essencial para entender o movimento e o comportamento de objetos naturais em trajetórias curvas. A que agora não te parece tão artificial? Deves confiar mais na matemática hehe</p>
+<p></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Desafio" /></div><div class="feedback js-feedback js-hidden"><p>Encontre aplicações do vetor tangente em outros contextos como, por exemplo, a arquitetura e comparta com seus colegas da turma. Força!!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_redessemanticas" id="id77">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_redessemanticas.svg)"><h1 class="iDeviceTitle">Vetor tangente e Reta tangente</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta77_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Dada uma parametrização de uma curva (ou caminho) \(\, \gamma(t)\,\), sabemos que podemos calcular sua derivada em um instante \(\,t_0\,\). Vimos que essa derivada é um vetor e aliás é tangente à curva no ponto \(\, \gamma(t_0)\,\), certo?</p>
+<p>Prontinho... Nas seções iniciais vimos como dar uma parametrização de uma reta a partir de um vetor diretor e um ponto da reta, <a href="parametrizao_de_retas_e_segmentos_no_plano.html" title="Volte se não lembrar! | Agora é um bom momento de voltar e afixar como se parametriza uma reta. Volte nos conteúdos anteriores sempre que precisar. Força!" class="exe-tooltip plain-tt titled-tt">certo?</a> Então, um vetor diretor da reta tangente a uma curva é o vetor tangente, que já vimos que é a derivada. Não se estresse, vamos ver um exemplo onde calcularemos passo a passo a reta para você enxergar direitinho.</p>
+<p style="background-color: aqua;"><br />Determine a equação da reta tangente à trajetória de \(\,\vec{r}(t)=(t, t^2,1)\,\) no instante  \(\,t=2\,\).</p>
+<p>Vamos lá... Para dar a equação da tal reta tangente, preciso de um vetor tangente ao ponto \(\,\vec{r}(2)=(2, 2^2,1)=(2,4,1)\,\). Para isso, vou calcular a derivada de \(\,\vec{r}(t)\,\) no instante \(\,t=2\,\). Isto é, \(\,\vec{r}\,'(2)\,\).</p>
+<p>Derivando coordenada a coordenada, vemos que \(\,\vec{r}\,'(t)=(1, 2t,0)\,\). Logo \(\,\vec{r}\,'(2)=(1, 4,0),\,\) o procurado vetor tangente.</p>
+<p>Portanto, conhecendo o ponto e um vetor tangente, uma equação paramétrica da reta tangente seria \(\,\vec{s}(t)=(2,4,1)+(1, 4,0)t=(2+t,4+4t,1),\,\) \(\,t\in \mathb{R}.\,\)</p>
+<p>Sacou?</p>
+<p>Entre em contato com os monitores se ainda estiveres com dúvidas.</p>
+<p>Força!</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Desfio" /></div><div class="feedback js-feedback js-hidden"><p>Na atividade a seguir, mostraremos como esboçar o vetor tangente a uma curva em um dado ponto. Use as técnicas vistas no capítulo de <a href="como_esboar_curvas_com_o_geogebra.html" title="Vamos lá?" class="exe-tooltip plain-tt">Como esboçar curvas com o Geogebra</a> para adicionar ao desenho a reta tangente.</p>
+<p>Pergunte aos colegas da turma ou entre em contato conosco se você não conseguir, tá? Vai ver como vai dar certo!</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id73">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Como esboçar o vetor tangente a uma curva </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta73_121_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-xrr73vdg auto-geogebra-width-1920 auto-geogebra-height-953 auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>Para esboçar a curva do exemplo anterior junto com o vetor tangente no Geogebra escreva o seguinte código:</p>
+<p>a=Curva(3+2 cos(t),-1+2 sen(t),t,0,2 π) para dar uma parametrização da curva</p>
+<p>P=a(Pi) para calcular o ponto da curva no instante \(\, t=\pi\,\). Atenção! O Geogebra entende as letras maiúsculas como pontos e as minúsculas como vetores.</p>
+<p>da=Derivada(a) para calcular a derivada da parametrização</p>
+<p>v=da(Pi) para calcular vetor tangente no instante \(\, t=\pi\,\). Atenção! O Geogebra entende as letras maiúsculas como pontos e as minúsculas como vetores.</p>
+<p>O Geogebra esboçará o vetor saindo da origem. Para colocar o vetor no ponto P, devemos usar a ferramenta Vetor a partir de um ponto, localizada no barra de menu superior. Depois selecionar o ponto P e o vetor v.</p>
+<p><a title="Clique aqui" class="exe-dialog-link" rel="lightbox" href="#tc4d0e967-96d5-120f-74f1-61fffbef6a0c" id="linkc4d0e967-96d5-120f-74f1-61fffbef6a0c">O Geogebra devolverá o seguinte código:</a></p>
+<p>P'=Transladar(P,v), traslada o ponto P na direção do vetor v</p>
+<p>u=Vetor(P,P'), vetor que une o ponto P e P'</p>
+<p>No applet a seguir você tem os códigos para esboçar o vetor tangente a uma curva em um ponto qualquer t=tempo.</p>
+<p>Pode mexer no tempo ou no ponto P. Fique a vontade!</p>
+<div id="tc4d0e967-96d5-120f-74f1-61fffbef6a0c" class="exe-dialog-text js-hidden">
+<p>Você também pode escrever o código diretamente sem usar a ferramenta do Geogebra.</p>
+</div></div><p><a href="https://www.geogebra.org/m/xrr73vdg" target="_blank">https://www.geogebra.org/m/xrr73vdg (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Bego%F1a%20Alarc%F3n,https%3A//www.geogebra.org/m/xrr73vdg,vetor%20tangente%20a%20uma%20curva,1,Autoria</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_redessemanticas" id="id71">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_redessemanticas.svg)"><h1 class="iDeviceTitle">Vetor velocidade e aceleração</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta71_123_2" class="block iDevice_content">
+<div class="exe-text"><p>As curvas paramétricas também são uma maneira poderosa de descrever trajetórias e movimentos em matemática e física. Por exemplo, pensemos em um trem de uma montanha-russa:</p>
+<p><img src="montanharussa.jpg" alt="" title="Montanha-russa" width="400" height="359" style="vertical-align: middle; margin: 10px;" /></p>
+<p>Qual será a velocidade de descida? Vamos calculá-la!! Fique ligado porque você fará isso em Física muitas vezes :-)</p>
+<p><a href="https://www.geogebra.org/m/w9vawj45" title="Como??? | Este é o link para o applet do Geogebra onde está toda a construção do exemplo. Entre em contato conosco se tiveres dúvidas!" class="exe-tooltip plain-tt titled-tt">Fizemos uma simulação da curva que descreve o trecho da trajetória do trem da imagem</a>:</p>
+<p><img src="montanharussapar.jpg" alt="" title="Parametrização montanha russa" width="410" height="308" style="vertical-align: middle; margin: 10px;" /></p>
+<p>E obtivemos as seguintes equações paramétricas:</p>
+<p style="text-align: center;">\(\begin{cases} x(t)= t-8 \\ y(t) = 0.03t^3 - 0.52t^2 + 1.55t - 0.95)\end{cases} \quad ,\,t\in [0,15.5]\)</p>
+<p></p>
+<p>Qual é a direção do movimento do trem 6 minutos depois de iniciar a aventura?</p>
+<p>Vamos lá! Derivando a equação paramétrica obtemos a função velocidade:</p>
+<p>\(\vec{v}(t)=(1, 0.09t^2 - 1.04t + 1.55),\;t\in [0,15.5]\)</p>
+<p>E substituindo t por 6, obtemos o vetor velocidade \(\; \vec{v}=\vec{v}(6)=(1, -1.45),\) que é a direção do movimento do trem após 6 minutos do início da aventura.</p>
+<p>Observamos que a inclinação do vetor é negativa, portanto, no instante t=6, o trem está descendo. A que velocidade? Pois bem, neste caso, diremos que a velocidade escalar é \(\; v=||(1, -1.45)||=\sqrt{1^2+(-1.45)^2}=1.76\). Daí podemos afirmar que, <a title="Se lique!" class="exe-dialog-link" rel="lightbox" href="#te9cab497-00a3-653e-212c-ee4226082860" id="linke9cab497-00a3-653e-212c-ee4226082860">a partir de nossa simulação</a>, o trem está descendo a uma velocidade de 1.76 m/s. </p>
+<p>O que podemos dizer da aceleração? Mesma coisa!! Vamos lá?</p>
+<p>A aceleração é a derivada da velocidade, certo? Então vamos derivar a função velocidade!</p>
+<p>Derivando a função velocidade, obtemos a função aceleração  que é </p>
+<p>\(\vec{a}(t)=(0, 0.18t - 1.04), \;t\in [0,15.5]\)</p>
+<p>E, substituindo t por 6, obtemos o vetor aceleração após 6 minutos do início da aventura \(\; \vec{a}=\vec{a}(6)=(0, 0.04)\), com inclinação positiva. Logo, a aceleração escalar é \(\; a=||(0, 0.04)||=\sqrt{0^2+(0.04)^2}=0.04\). Diremos então que o trem está acelerando a 0.04 m/s<sup>2</sup>.</p>
+<p>Resumindo: o trem está descendo a uma velocidade de 1.76 m/s e acelerando a 0.04 m/s<sup>2</sup>.</p>
+<p>Legal, né? Você vai chegar crack em Física!!!</p>
+<div id="te9cab497-00a3-653e-212c-ee4226082860" class="exe-dialog-text js-hidden">
+<p>Todo o que nós estamos fazendo depende da simulação, ok? Não estamos tratando com dados reais. Você entenderá isso muito melhor em Física. Fique tranquilo. Neste contexto não é tão relevante o quanto é de boa a simulação.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper GeoGebraIdevice em_iDevice em_iDevice_geogebra" id="id81">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_geogebra.gif)"><h1 class="iDeviceTitle">Lançamento oblíquo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta81_125_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-jdch5mc4 auto-geogebra-width-1000 auto-geogebra-height-600 auto-geogebra-scale-100"><div class="auto-geogebra-instructions"><p>O lançamento oblíquo ocorre quando um objeto é arremessado na diagonal, formando um ângulo entre \(\,0º\,\) e \(\,90º\,\) em relação à horizontal. Esse movimento combina componentes verticais e horizontais, resultando em uma trajetória parabólica. Como exemplos desse lançamento temos o c<span style="font-size: 1.05em;">hute de um futebolista, t</span>rajetória de uma bola de golfe ou o salto de um atleta à distância, entre outros.</p>
+<p><img src="lanobliquo.png" alt="" title="Lançamento oblíquo" width="654" height="177" style="vertical-align: middle; margin: 10px;" /></p>
+<p>As equações paramétricas são:</p>
+<p>\(\begin{cases} X(t)=X_0+V_0\cos(\alpha)\,t\\Y(t)=Y_0+V_0\operatorname{sen}(\alpha)\,t-g\dfrac{t^2}{2}\ \end{cases}\,\)</p>
+<p>No seguinte você pode introduzir os dados iniciais do problema como velocidade inicial, ponto inicial, etc e mexer no ângulo do lançamento de um objeto. O applet devolve as equações do movimento \r(t)=(X,Y) e as equações da velocidade V=(V_x,V_y), assim como outras propriedades importantes do problema.</p></div><p><a href="https://www.geogebra.org/m/jdch5mc4" target="_blank">https://www.geogebra.org/m/jdch5mc4 (Nova janela)</a></p><div class="auto-geogebra-author js-hidden">Wagner%20Moreira%20Pereira,https%3A//ggbm.at/31841725,Lan%E7amento%20Horizontal%20e%20Obl%EDquo,1,Autoria</div><div class="auto-geogebra-extra-content"><p><strong>Qual é o vetor velocidade no instante t=2.5? E a velocidade escalar nesse instante?</strong></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-nd">
+<p><span>Sob licença</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licença Creative Commons Atribuição Não Comercial Sem Derivações 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="exerccios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="exerccios0.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Nova janela)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

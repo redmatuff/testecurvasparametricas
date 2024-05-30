@@ -1,0 +1,263 @@
+@font-face {
+	font-family: indie;
+	src: url(IndieFlower-Regular.ttf);
+}
+
+/* Nao repetir imagens de fundo nos headers */
+header{
+	background-repeat: no-repeat !important;
+}
+
+#skipNav{
+	display: none;
+}
+
+/* Background e tamanho do header */
+#header{
+	background-image: url(banner4.png) !important;
+	background-repeat: no-repeat !important;
+	background-size: 100vw;
+	color: white;
+	display: flex;
+	justify-content: center;
+	height: 30vw;
+}
+
+/* Título da header */
+header div{
+	margin-top: 5vw;
+	font-size: 5vw;
+	font-weight: 600;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header-options{
+
+}
+/* Logo RedMat no header */
+header img{
+	margin: 2vw 2vw;
+	position: absolute;
+	left: 0;
+	width: 10vw;
+	height: 10vw;
+}
+
+
+
+/* Botão do menu */
+.img-menu-icon{
+	position: absolute;
+}
+.show-nav, .hide-nav{
+	display: flex;
+	background-repeat: no-repeat;
+	height: 55px;
+	width: 51px;	
+}
+
+.show-nav{
+	background-image: url(menu-show.png);
+	z-index: 10;
+}
+
+.hide-nav{
+	background-image: url(menu-hide.png);
+	z-index: 10;
+}
+
+.show-nav span, .hide-nav span{
+	display: none;
+}
+
+
+
+
+/* ********** */
+header{
+	/* position: absolute; */
+}
+#content{
+	/* display: flex; */
+	/* flex-direction: row; */
+	/* background-color: red; */
+}
+
+
+/* Janela do Menu */
+#siteNav{
+	/* display: none; */
+	position: absolute;
+	/* transform: translate(-22rem, 55px); */
+	background-color: #0097b4;
+	width: 50vw;
+	border-radius: 0 10px 50px 0;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+	z-index: 2 !important;
+	transform: translateY(55px);
+	/* max-width: 25rem; */
+}
+
+#siteNav ul{
+	padding: 1.5rem;
+}
+#siteNav ul li{
+	border-bottom: solid white 3px;
+	padding: 1rem 0 0 0;
+	/* box-shadow: 2px 2px 5px 1px black; */
+	/* margin: 1rem; */
+}
+#siteNav ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	text-shadow: 1px 1px 4px black;
+	/* padding-bottom: 2rem; */
+	/* background-color: red; */
+	display: inline-block; /* Ou block, dependendo do layout desejado */
+	padding-bottom: 0.4rem !important;
+	/* line-height: 2rem; */
+}
+
+
+
+
+
+
+
+
+
+
+
+#topPagination{
+	display: none;
+}
+#nodeTitle{
+	margin: 1rem 2rem 0.2rem 2rem;
+	font-weight: 600;
+	color: rgb(218, 40, 40);	
+	font-family: indie;
+	font-size: 30pt;
+	border-bottom: solid rgb(219, 78, 78) 3px;
+	/* text-transform: capitalize; */
+}
+#main{
+	margin: 0 2rem 0 60px;
+	/* background-color: rgba(255, 255, 0, 0.464); */
+}
+.iDevice header{
+	margin: 0 2rem;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	/* background-image: url("icon_udl_eng_orientaciones.svg");
+	background-position: center;
+	background-repeat: no-repeat; */
+
+/* Não consegui lidar com essas imagens carregadas no html, precisa ser visto no javascript*/
+
+}
+
+.iDevice header h1{
+	text-transform: capitalize;
+	font-size: 20pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(218, 40, 40);
+	font-weight: 600;
+	margin-left: 5rem;
+}
+
+
+
+
+.iDevice header p{
+	display: none;
+}
+
+.iDevice .iDevice_inner{
+	margin: 1rem;
+	border: solid salmon 3px;
+	padding: 1rem 0.5rem;
+	font-weight: 600;
+	line-height: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
+
+	/* background-color: yellow; */
+    max-height: 100px; /* Defina a altura máxima do texto */
+    overflow: hidden; /* Esconde o texto que ultrapassa a altura máxima */
+    transition: max-height 1s; /* Adiciona uma transição suave */
+}
+
+.iDevice .iDevice_inner:hover{
+    /* max-height: none; */
+	/* background-color: #0096b431; */
+}
+
+
+
+
+
+
+
+#packageLicense{
+	/* display: none; */
+}
+
+#made-with-eXe{
+	display: none;
+}
+
+
+
+#bottomPagination{
+	/* background-color: blue; */
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	height: 5rem;
+	z-index: 5;
+}
+.pagination{
+	display: flex;
+	flex-direction: row;
+}
+.next{
+	width: 6rem;
+	background-image: url(prox-pag.png) !important;
+	height: 6rem !important;
+	display: flex;
+	flex-direction: row;
+	background-repeat: no-repeat;
+	background-size: 6rem;
+	background-position-x: 0.2rem;
+}
+
+.prev{
+	width: 4rem;
+	background-image: url(pag-ant.png) !important;
+	height: 5rem !important;
+	display: flex;
+	flex-direction: row;
+	background-repeat: no-repeat;
+	background-size: 3rem;
+	background-position-x: -0.2rem;
+	display: none;
+}
+
+
+.next span, .prev span, .sep{
+	display: none;
+}
+
+
+@media (min-width: 768px) {
+	#siteNav{
+		width: 25rem;
+	}
+}
+
+.toggle-em0{
+	display: none;
+}
