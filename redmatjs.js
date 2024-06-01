@@ -299,20 +299,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var siteNav = document.querySelector('#siteNav');
     siteNav.parentNode.insertBefore(imgMenuIcon, siteNav);
 	if (window.innerWidth < 768){
-		siteNav.style.left = 'calc(-50vw + 50px)';
+		siteNav.style.left = 'calc(-50vw - 50px)';
 		}else{
-			siteNav.style.left = 'calc(-25rem + 50px)';
-		}
+            // siteNav.style.position = 'inherit';
+            siteNav.style.left = 'calc(0)';
+        }
     
     imgMenuIcon.addEventListener('click', function() {
 		if(menuAberto){
 			menuAberto = false;
 			img.src = 'menu-show.png';
 			if (window.innerWidth < 768){
-			siteNav.style.left = 'calc(-50vw + 50px)';
+			siteNav.style.left = 'calc(-50vw - 50px)';
 			}else{
-				siteNav.style.left = 'calc(-25rem + 50px)';
-			}
+                // siteNav.style.position = 'inherit';
+                siteNav.style.left = 'calc(0)';
+            }
 		}else{
 			menuAberto = true;
 			img.src = 'menu-hide.png';
@@ -326,13 +328,17 @@ document.addEventListener('DOMContentLoaded', function() {
 // Ajusta menu ao redimensionar tela
 function adjustSiteNavPosition() {
     if (window.innerWidth < 768 && menuAberto == false) {
-		siteNav.style.left = 'calc(-50vw + 50px)';
+		siteNav.style.left = 'calc(-50vw - 50px)';
 	}else{
-		siteNav.style.left = 'calc(-25rem + 50px)';
+        // siteNav.style.position = 'inherit';
+		siteNav.style.left = 'calc(0)';
 	}
 	if (menuAberto == true) {
 		siteNav.style.left = '0';
 	}
+    if(window.innerWidth >= 768){
+        siteNav.style.left = '0';
+    }
 }
 adjustSiteNavPosition();
 window.addEventListener('resize', adjustSiteNavPosition);
