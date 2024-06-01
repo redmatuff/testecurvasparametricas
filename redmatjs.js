@@ -406,33 +406,32 @@ divMain.appendChild(novaDiv);
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.iDevice_inner');
-    elements.forEach(function(element) {
-        element.addEventListener('click', function(event) {
-            event.stopPropagation();
-            // Fecha todos os iDevice_inner, exceto o atual
-            elements.forEach(function(innerElement) {
-                if (innerElement !== element && innerElement.style.maxHeight === 'none') {
-                    innerElement.style.maxHeight = '100px';
-                }
-            });
-            // Abre ou fecha o iDevice_inner clicado
-            if (this.style.maxHeight === 'none') {
-                // this.style.maxHeight = '100px';
-            } else {
-                this.style.maxHeight = 'none';
-            }
-        });
-    });
-    // Fecha todos os iDevice_inner quando qualquer outro lugar é clicado
-    document.addEventListener('click', function(event) {
-        elements.forEach(function(innerElement) {
-            // Verifica se o clique foi dentro de algum iDevice_inner
-            if (!innerElement.contains(event.target)) {
-                innerElement.style.maxHeight = '100px'; // Volta ao estilo original
-            }
-        });
-    });
-});
+
+
+// DESCOMENTAR ABAIXO PARA ABRIR E FECHAR iDevice
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const elements = document.querySelectorAll('.iDevice_inner');
+//     elements.forEach(function(element) {
+//         element.addEventListener('click', function(event) {
+//             event.stopPropagation();
+//             elements.forEach(function(innerElement) {
+//                 if (innerElement !== element && innerElement.style.maxHeight === 'none') {
+//                     innerElement.style.maxHeight = '100px';
+//                 }
+//             });
+//             if (this.style.maxHeight === 'none') {
+//             } else {
+//                 this.style.maxHeight = 'none';
+//             }
+//         });
+//     });
+//     document.addEventListener('click', function(event) {
+//         elements.forEach(function(innerElement) {
+//             if (!innerElement.contains(event.target)) {
+//                 innerElement.style.maxHeight = '100px'; 
+//             }
+//         });
+//     });
+// });
 
